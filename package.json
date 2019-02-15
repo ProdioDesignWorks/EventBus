@@ -1,0 +1,63 @@
+{
+  "name": "eventbus-prodio",
+  "version": "1.0.0",
+  "description": "EventBus based on Google Pub/Sub",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ". scripts/build.sh",
+    "lint": "eslint src",
+    "lintfix": "eslint --fix src",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "author": {
+    "name": "Pawan Wagh",
+    "email": "pawan@prodio.in",
+    "url": "http://prodio.in/company/"
+  },
+  "contributors": [
+    {
+      "name": "Pawan Wagh",
+      "email": "pawan@prodio.in",
+      "web": "http://prodio.in/company/"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Pawan Wagh",
+      "email": "pawan@prodio.in",
+      "web": "http://prodio.in/company/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ProdioDesignWorks/EventBus.git"
+  },
+  "bugs": "https://github.com/ProdioDesignWorks/EventBus/issues",
+  "homepage": "https://github.com/ProdioDesignWorks/EventBus",
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.24.1",
+    "is": "^3.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-minify": "^0.5.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-security": "^1.4.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT"
+}
